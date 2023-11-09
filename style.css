@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: blanchedalmond;
+  text-decoration: aliceblue;
+  font-size: 14px;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100;
+}
+
+.text-box{
+  width: 90%;
+  color: blanchedalmond;
+  text-decoration: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 40px;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+@media(max-width: 700px) {
+  .text-box h1{
+      font-size: 20px;
+  } 
+}
+nav.fa{
+  display: block;
+  color:darkblue;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+ }
+ .nav-links ul{
+  padding: 30px;
+ }
+
+/*-----Home-----*/ 
+.Home{  
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 100px;
+
+}
+
+.pic{
+  width: 700;
+  height: auto;
+  position: relative;
+}
+
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+p{
+  color: black;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+} 
+img{
+width: 600px;
+border: 7px ridge aliceblue;
+}
+#left{  
+float: left;
+}
+#right{  
+float: right;
+}
+
+/*-----Artwork-----*/
+
+.Artwork{
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding-top: 350px;
+}
+
+.artwork-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.artwork-item {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.artwork-item img {
+  width: 40%;
+}
+
+.artwork-item h3 {
+  margin-top: 10px;
+}
+
+.artwork-item p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/*-----Workshop-----*/
+
+.Workshop{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 350px;
+}
+
+.workshop-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.workshop-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*-----Inquiry-----*/
+.Inquiry{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 100px;
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 45%;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.inquiry-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.inquiry-form button:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
